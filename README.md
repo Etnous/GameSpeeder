@@ -1,0 +1,2 @@
+# GameSpeeder
+Install wireguard
