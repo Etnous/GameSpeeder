@@ -266,7 +266,9 @@ init_wireguard(){
 
 install_wireguard(){
   clear
-
+  rm -rf /root/wgclient
+  rm -rf /etc/wireguard
+  
   case $os_version in
   centos)
     cd /root/ && yum update -y
