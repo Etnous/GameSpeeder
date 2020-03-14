@@ -4,7 +4,7 @@
 # Title: Install WireGuard                            #
 # Author: Etnous                                      #
 # Blog: https://lala.biz                              #
-# Update date: December 11, 2019                      #
+# Update date: Feb 18, 2020                           #
 #######################################################
 #==========Define color==========
 Green_font_prefix="\033[32m"
