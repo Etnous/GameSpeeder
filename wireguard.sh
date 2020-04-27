@@ -281,7 +281,7 @@ install_wireguard(){
     ;;
   debian)
     cd /root && apt update -y
-    apt install -y libmnl-dev libelf-dev linux-headers-$(uname -r) build-essential pkg-config git tar resolvconf
+    apt install -y libmnl-dev libelf-dev linux-headers-$(uname -r) build-essential pkg-config git tar resolvconf make
     git clone https://github.com/Etnous/wireguard.git
     cd /root/wireguard/src && make && make install
     rm -rf /root/wireguard
