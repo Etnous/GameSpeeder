@@ -446,6 +446,11 @@ update_kernel(){
     apt update -y && apt dist-upgrade -yq
     apt install -t stretch-backports linux-image-amd64 linux-headers-amd64 -yq
     apt clean
+    
+  elif [[ $os_version == "debian"  ]] && [[ $VERSION_ID == "10" ]]; then
+    apt update -y && apt dist-upgrade -yq
+    apt install -t buster-backports linux-image-amd64 linux-headers-amd64 -yq
+    apt clean
 
   else
     echo -e "${tip}  Nothing to update." && exit 1
